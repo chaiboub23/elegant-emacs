@@ -32,12 +32,12 @@
 
 
 ;; Font and frame size
-(set-face-font 'default "Roboto Mono Light 14")
+(set-face-font 'default "SF Mono-13")
 (setq default-frame-alist
       (append (list '(width  . 72) '(height . 40)
                     '(vertical-scroll-bars . nil)
                     '(internal-border-width . 24)
-                    '(font . "Roboto Mono Light 14"))))
+                    '(font . "SF Mono-13"))))
 (set-frame-parameter (selected-frame)
                      'internal-border-width 24)
 
@@ -66,7 +66,7 @@
 
 ;; No fringe but nice glyphs for truncated and wrapped lines
 (fringe-mode '(0 . 0))
-(defface fallback '((t :family "Fira Code Light"
+(defface fallback '((t :family "SF Mono"
                        :inherit 'face-faded)) "Fallback")
 (set-display-table-slot standard-display-table 'truncation
                         (make-glyph-code ?… 'fallback))
@@ -142,7 +142,6 @@ background color that is barely perceptible."
 
 ;; Mode line (this might be slow because of the "☰" that requires substitution)
 ;; This line below makes things a bit faster
-(set-fontset-font "fontset-default"  '(#x2600 . #x26ff) "Fira Code 16")
 
 (define-key mode-line-major-mode-keymap [header-line]
   (lookup-key mode-line-major-mode-keymap [mode-line]))
