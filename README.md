@@ -5,6 +5,7 @@ The goal is to have a minimal consistent vanilla emacs (i.e. no
 package) and yet elegant.  
 The defaul font is [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
 and optionally, you'll also need the [Fira Code](https://fonts.google.com/specimen/Fira+Code) font.
+This fork depends on Apple's [SF Mono](https://developer.apple.com/fonts/) font instead of the original fonts specified by Nicolas Rougier.
 
 Elegant Emacs is mostly a prototype or proof of concept. While it is
 perfectly usable, you might want to have a look a [GNU Emacs / N Λ N
