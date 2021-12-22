@@ -35,7 +35,7 @@
       (append (list '(width  . 72) '(height . 40)
                     '(vertical-scroll-bars . nil)
                     '(internal-border-width . 24)
-                    '(font . "Roboto Mono Light 14"))))
+                    '(font . "SF Mono-13"))))
 (set-frame-parameter (selected-frame)
                      'internal-border-width 24)
 ;;; -------------------------------------------------------------------
@@ -147,7 +147,7 @@ background color that is barely perceptible."
 ;;; Mode line rendering
 ;;; -------------------------------------------------------------------
 ;;; This line below makes things a bit faster
-(set-fontset-font "fontset-default"  '(#x2600 . #x26ff) "Fira Code 16")
+(set-fontset-font "fontset-default"  '(#x2600 . #x26ff) "SF Mono-13")
 
 (define-key mode-line-major-mode-keymap [header-line]
   (lookup-key mode-line-major-mode-keymap [mode-line]))
